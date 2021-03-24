@@ -4,7 +4,7 @@ function App() {
   const [time, setTime] = useState("no time set");
 
   async function getTime() {
-    const res = await fetch("");
+    const res = await fetch("/api/test");
     const responseObject = await res.text();
 
     setTime(responseObject);
